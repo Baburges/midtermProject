@@ -1,0 +1,335 @@
+/*Makes the body all the same font and the background as dark gray and text white*/
+body{
+    font-family:Arial;
+    background-color:rgb(53, 51, 51);
+    color:white;
+
+}
+/*Creates a margin or indent in the page*/
+.page-wrapper{
+    padding-left:70px;
+    padding-right:70px;
+}
+/* all # are the same for the nav bar making the text gray, no text decoration*/
+#home{
+    color:lightslategray;
+    text-decoration:none;
+    padding:10px;
+}
+#work{
+    color:lightslategray;
+    text-decoration:none;
+    padding:10px;
+}
+#about-me{
+    color:lightslategray;
+    text-decoration:none;
+    padding:10px;
+}
+#contacts{
+    color:lightslategray;
+    text-decoration:none;
+    padding:10px;
+}
+/*This creates a vertical line that is lightgray that will be from the top downward*/
+.vertical-line{
+    border-left:2px solid lightslategray;
+    height:57px;
+    margin-right:10px;
+    margin-left:15px;
+    color:lightslategray;
+    position:absolute;
+    top:0;
+    left:0;
+}
+/*This creates the links to be active and in a column on top of eachother*/
+.vertical-line .links:active{
+    flex-direction: column;;
+}
+/*Creates the width and height of the images in the link*/
+.links img{
+    width:20px;
+    height:20px;
+    display:flex;
+}
+/*Creates the navbar to be lightgray and the background of the navbar to be darkgray*/
+.navbar{
+    background-color: rgb(53, 51, 51);
+    
+    color:lightslategray;
+    
+}
+/*This makes the navbar start on the left and go over as the text goes*/
+.navbar a{
+    float:left;
+    padding:14px 16px;
+    text-align:center;
+    color:lightslategray;
+    font-size:17px;
+}
+/*Creates the width and height of the images in the navbar*/
+.navbar img{
+    height:20px;
+    width:20px;
+    margin-top:20px;
+}
+/*The right of the navbar goes right*/
+.topnav-right{
+    float:right;
+   
+}
+
+.about{
+    margin-right:100px;
+    display:block;
+    color:lightslategray;
+}
+/*Makes the color purple*/
+.purple{
+    color:purple;
+}
+
+/*Makes text white*/
+.white{
+    color:white;
+}
+.rtl{
+    direction:right;
+    text-indent:50px;
+}
+/*Makes text gray*/
+.gray{
+    color:lightslategray;
+}
+/*Will make the image go right with a declared height and width*/
+.image-right{
+    float:right;
+    height:200px;
+    width:300px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    color:white;
+    grid-column-gap:10px;
+   
+}  
+/*Creates a card that has a white border and is solid, grid-column starts and makes an even box for all
+of the cards below*/
+.card1{
+    grid-column-start:1;
+    grid-column-end:auto;
+    border:1px;
+    border-color:white;
+    border-style:solid;
+    padding:5px;
+  
+
+}
+.card2{
+    grid-column-start:2;
+    grid-column-end:auto;
+    border:1px;
+    border-color:white;
+    border-style:solid;
+    padding:5px;
+    white-space:nowrap;
+}
+.card3{
+    grid-column-start:3;
+    grid-column-end:3;
+    border:1px;
+    border-color:white;
+    border-style:solid;
+    padding:5px;
+   
+}
+.card4{
+    grid-column-start:4;
+    grid-column-end:4;
+    border:1px;
+    border-color:white;
+    border-style:solid;
+    padding:5px;
+   
+}
+.card5{
+    grid-column-start:5;
+    grid-column-end:5;
+    border:1px;
+    border-color:white;
+    border-style:solid;
+    padding:5px;
+  
+}
+/*Has the information inside the box moving to the next line if it doesnt fit in the standard box,
+also is making the letters lightgray*/
+.info-box{
+    display: flex;
+    flex-wrap:wrap;
+    max-width:600px;
+    gap:20px;
+    color:lightslategray;
+}
+/*Creates a box that holds all the information, creates all the same size box for each of the 5 */
+.box{
+    padding:10px 20px;
+    border-radius:1px;
+    border-color:lightslategray;
+    border-style:solid;
+    box-shadow:0px 4px 6px rgba(0,0,0,0.1);
+}
+/*Makes the line accross the bottom to show there is a difference between footer and body*/
+footer{
+    padding:20px;
+    border-top:1px solid white;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:900px;
+    color:white;
+
+}
+/*Aligns to the right in the textbox*/
+.right{
+    text-align:right;
+}
+/* has text centered to the left*/
+.footer-left{
+    display:flex;
+    align-items:center;
+}
+
+.footer-info{
+    margin-left:10px;
+}
+
+.footer-info i{
+    font-size:18px;
+    margin-right:8px;
+}
+/*Makes image declared size*/
+.footer-container img{
+    width:30px;
+    height:30px;
+}
+/*Creates the name as bold with the name being pushed to the right by 10px*/
+.name{
+    font-weight:bold;
+    margin-right:10px;
+}
+/*Creates the email as lightgray*/
+.email{
+    color:lightslategray;
+}
+/*Makes image declared size*/
+.name img{
+    height:15px;
+    width:15px;
+}
+/*Creates a grid template of 4 so they can be next to eachother and not on top of one another*/
+.grid-container2{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    color:lightslategray;
+}
+/*Creates a grid so that 2 of the photos can be next to eachother and will stay next to eachother when the page shrinks*/
+.media1{
+    grid-column-start:1;
+    grid-column-end:1;
+    border:1px;
+    color:white;
+    font:bold;
+}
+.media2{
+    grid-column-start:2;
+    grid-column-end:2;
+    border:1px;
+    color:lightslategray;
+  
+}
+/* These all set the image to a set size and add padding*/
+.media1 img{
+    height:20px;
+    width:20px;
+    padding:-2px;
+}
+.media2 img{
+    height:20px;
+    width:20px;
+    padding:-2px;
+}
+/*Creates a grid so that they will be next to eachother and not stacked*/
+.media3{
+    grid-column-start:1;
+    grid-column-end:1;
+    border:1px;
+    color:lightslategray;
+    font:bold;
+    
+}
+.media4{
+    grid-column-start:2;
+grid-column-end:2;
+border:1px;
+color:lightslategray;
+font:bold;
+
+}
+/* These all set the image to a set size and add padding*/
+.media3 img{
+    height:20px;
+    width:20px;
+    padding:-2px;
+}
+.media4 img{
+    height:20px;
+    width:20px;
+    padding:-2px;
+}
+/*Makes links declared as active and on the right*/
+.media-links:active{
+    float:right;
+}
+/*Makes image declared size*/
+.media-links img{
+    width:20px;
+    height:20px;
+    padding:5px;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    
+}
+/*Creates box for Message and email*/
+.contacts-box{
+    border:1px;
+    border-style:solid;
+    border-color:lightslategray;
+    float:right;
+    border-radius:10px;
+    display:flexbox;
+    padding:10px;
+   
+}
+/* Lines the email and link for the contact box*/
+.contact-box a{
+    text-decoration:none;
+    display:block;
+    margin-top:10px;
+    border-style:1px soild lightslategray;
+    padding:8px;
+    border-radius:5px;
+    
+}
+/*Makes image declared size*/
+.contacts-box img{
+    height:20px;
+    width:20px;
+}
